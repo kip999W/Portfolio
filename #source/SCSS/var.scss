@@ -1,0 +1,14 @@
+$white: #fff;
+$black: #212121;
+$main: #968c76;
+
+:root {
+	--index: calc(1vw + 1vh);
+	--swiper-theme-color: $white;
+	--swiper-navigation-color: $white;
+  --swiper-navigation-sides-offset: 40px;
+  --swiper-pagination-bottom: 20px;
+  --swiper-pagination-color: #afb3c0;
+  --swiper-pagination-bullet-inactive-color: #36373c;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
