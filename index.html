@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Freelancer portfolio</title>
+
+		<!-- Подключение основных CSS файлов -->
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+
+		<!-- Подключение библиотеки иконок Boxicons версии 2.1.4 для использования в проекте -->
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+		<!-- Настройка фавиконов -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./image/icons/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./image/icons/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./image/icons/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./image/icons/favicon/site.webmanifest">
+
+		<!-- Подключение JavaScript файлов с отложенной загрузкой для оптимизации производительности -->
+		<script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+		<script src="./js/app.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-logo">
+					<a href="./index.html" class="header-logo__link">
+						<img src="./image/icons/logo.png" alt="Portfolio" class="header-logo__image">
+					</a>
+				</div>
+
+				<nav class="header-nav">
+					<ul class="header-list">
+						<li class="header-list__item">
+							<a href="#projects" class="header-list__link">
+								Projects
+							</a>
+						</li>
+						<li class="header-list__item">
+							<a href="#" class="header-list__link section__btn1">
+								Skills
+							</a>
+						</li>
+						<li class="header-list__item">
+							<a href="#" class="header-list__link section__btn2">
+								Contacts
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<button type="button" class="burger">
+					<span></span>
+				</button>
+			</div>
+		</header>
+		<main class="main">
+		<div class="swiper slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide">
+					<img src="image/swiper/welcome.png" class="slide__image">
+
+					<div class="slide__overlay">
+						<div class="slide__content">
+							<h2>Portfolio</h2>
+							<p>Создаю с вдохновением</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="image/swiper/welcome1.png" alt="Frontend" class="slide__image">
+
+					<div class="slide__overlay">
+						<div class="slide__content">
+							<h2>Frontend</h2>
+							<p>Java<em>Script</em>, React<em>JS</em>, HTML, CSS, Boot<em>Strap</em></p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="image/swiper/welcome2.png" alt="Backend" class="slide__image">
+
+					<div class="slide__overlay">
+						<div class="slide__content">
+							<h2>Backend</h2>
+							<p>My<em>SQL</em>, PHP</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-bottom">
+				<div class="slider-pagination">
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<div class="slider-navigation">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>		<section id="projects">
+			<div class="container">
+				<h2 class="title-1">Projects</h2>
+
+				<div class="card">
+					<div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/1.jpg" class="card__img">
+							<h3 class="card__title">Gaming streaming portal</h3>
+				    </a>
+				  </div>
+				  <div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/2.jpg" class="card__img">
+							<h3 class="card__title">Video service</h3>
+				    </a>
+				  </div>
+				  <div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/3.jpg" class="card__img">
+							<h3 class="card__title">Video portal</h3>
+				    </a>
+				  </div>
+				  <div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/4.jpg" class="card__img">
+							<h3 class="card__title">Dating app</h3>
+				    </a>
+				  </div>
+				</div>
+
+				<div class="btn-container">
+          <a href="#!" class="btn section__btn3">Все проекты</a>
+        </div>
+			</div>
+		</section>			</main>
+
+		<div class="modal modal1">
+			<div class="modal__main">
+				<h3 class="modal__title">Skills</h3>
+
+				<ul class="content-list">
+					<li class="content-list__item">
+						<h2 class="title-2">Frontend</h2>
+						<p>JavaScript, ReactJS, HTML, CSS, BootStrap</p>
+					</li>
+					<li class="content-list__item">
+						<h2 class="title-2">Backend</h2>
+						<p>MySQL, PHP</p>
+					</li>
+				</ul>
+
+				<i class='bx bxs-x-circle modal__close'></i>
+			</div>
+		</div>
+
+		<div class="modal modal2">
+			<div class="modal__main">
+				<h3 class="modal__title">Contacts</h3>
+
+				<ul class="content-list">
+          <li class="content-list__item">
+            <h2 class="title-2">Location</h2>
+            <p>Moscow, Russia</p>
+          </li>
+          <li class="content-list__item">
+            <h2 class="title-2">Telegram / WhatsApp</h2>
+              <p><a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+          </li>
+          <li class="content-list__item">
+            <h2 class="title-2">Email</h2>
+            <p><a href="mailto:test@mail.ru">test@mail.ru</a></p>
+          </li>
+        </ul>
+
+				<i class='bx bxs-x-circle modal__close'></i>
+			</div>
+		</div>
+
+		<div class="modal modal3">
+			<div class="modal__main">
+				<h3 class="modal__title">Projects</h3>
+
+				<div class="card">
+					<div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/1.jpg" class="card__img">
+							<h3 class="card__title">Gaming streaming portal</h3>
+				    </a>
+				  </div>
+				  <div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/2.jpg" class="card__img">
+							<h3 class="card__title">Video service</h3>
+				    </a>
+				  </div>
+				  <div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/3.jpg" class="card__img">
+							<h3 class="card__title">Video portal</h3>
+				    </a>
+				  </div>
+				  <div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/4.jpg" class="card__img">
+							<h3 class="card__title">Dating app</h3>
+				    </a>
+				  </div>
+				  <div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/5.jpg" class="card__img">
+							<h3 class="card__title">Landing</h3>
+				    </a>
+				  </div>
+				  <div class="card-list">
+				    <a href="#!" class="card-list__link">
+				    	<img src="./image/projects/6.jpg" class="card__img">
+							<h3 class="card__title">Gaming community</h3>
+				    </a>
+				  </div>
+				</div>
+
+				<i class='bx bxs-x-circle modal__close'></i>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<ul class="social">
+						<li class="social__item">
+							<a href="#!" class="social__link">
+								<img src="./image/icons/socials/vk.png" class="social__image">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#!" class="social__link">
+								<img src="./image/icons/socials/instagram.png" class="social__image">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#!" class="social__link">
+								<img src="./image/icons/socials/твиттер.png" class="social__image">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#!" class="social__link">
+								<img src="./image/icons/socials/github.png" class="social__image">
+							</a>
+						</li>
+					</ul>
+
+					<div class="copyright">
+            <p>© 2024 frontend-portfolio24.ru</p>
+          </div>
+				</div>
+			</div>
+		</footer>	</body>
+</html>
