@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+@import "./reset.scss";
+@import "./var.scss";
+@import "./header.scss";
+@import "./swiper.scss";
+@import "./projects.scss";
+@import "./modal.scss";
+@import "./footer.scss";
+
+// general
+html, body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: $white;
+	background-color: $black;
+}
+
+.open { 
+	display: flex !important; 
+}
+
+::selection {
+	background-color: $main;
+	color: $white;
+}
+
+em {
+	font-style: normal;
+	color: $main;
+}
+
+section {
+	max-width: 840px;
+	margin: auto;
+	padding: 40px 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+// title
+.title-1 {
+	margin-bottom: 30px;
+	font-size: calc(var(--index) * 2);
+	color: $main;
+	text-align: center;
+}
+
+.title-2 {
+	margin-bottom: 20px;
+	font-size: calc(var(--index) * 1.25);
+	color: $main;
+}
+
+// btn 
+.btn {
+	margin-top: calc(var(--index) * 1.6);
+	padding: 9.25px 40px;
+	border: 1px solid $main;
+	font-size: 15.75px;
+	color: $main;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	transition: all .4s;
+
+	&:hover {
+		background-color: $main;
+		color: $white;
+	}
+}
+
+// card
+.card {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	max-width: 1250px;
+	gap: 20px;
+
+	.card-list {
+		color: $white;
+		border: 1px solid $main;
+		border-radius: 15px;
+		transition: border .5s ease;
+
+		.card__img {
+			width: 100%;
+			border-radius: 15px;
+			object-fit: cover;
+		}
+
+		.card__title {
+			padding: 26px;
+			font-size: 24px;
+			color: $main;
+		}
+	}
+}
+
+// media
+@media (max-width: 550px) {
+	// header
+	.header {
+		.header-nav {
+			display: none;
+      flex-direction: column;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0; bottom: 0; left: 0; right: 0;
+      z-index: 50;
+      overflow-y: auto;
+      padding: 50px 40px;
+      background-color: $black;
+      animation: burgerAnimation 0.4s;
+
+      .header-list {
+      	flex-direction: column;
+        row-gap: 30px;
+      }
+		}
+
+		.burger { display: flex; }
+	}
+}
+
+@keyframes burgerAnimation {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@media (max-width: 400px) {
+	// swiper 
+	.slide__content h2 {
+		font-size: calc(var(--index) * 1.25);
+	}
+}
